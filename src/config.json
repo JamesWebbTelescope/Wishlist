@@ -4,7 +4,6 @@
   "db_host": "172.20.88.184",
   "db_user": "",
   "db_password": "",
-  "jwt_token": "",
   "debug": true,
   "swagger_ui": true,
   "api_host": "172.20.88.184",
