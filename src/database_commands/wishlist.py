@@ -24,7 +24,24 @@ class WishlistModel:
                 conn.close()
 
 
-    
+    def Insert(self, name, price, link):
+        try:
+            conn = self.db.get_connection()
+            with conn.cursor(dictionary=True) as cursor:
+                query = "INSERT INTO wishlist (name, price, link) VALUES (%s, %s, %s)"
+
+                cursor.execute(query, (name, price, link))
+                result = cursor.fetchall()
+                #n_id = cursor.lastrowid
+            conn.commit()
+            #result = self.GetByProductID(produktID)
+            return True
+        except Exception as e:
+            print("Error inserting orders:", e)
+            return False
+        finally:
+            if conn is not None:
+                conn.close()
 
     def _totuple(self, myresult):
         result = {
