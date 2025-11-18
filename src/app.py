@@ -36,7 +36,7 @@ def create_app():
     # app.wsgi_app = ProxyFix(app.wsgi_app)
     
 
-    app.config["JWT_SECRET_KEY"] = config.jwt_token
+    #app.config["JWT_SECRET_KEY"] = config.jwt_token
     app.config["DEBUG"] = config.debug
     app.config["SWAGGER_UI"] = config.swagger_ui
     app.config["API_HOST"] = config.api_host
@@ -70,7 +70,7 @@ def create_app():
     api.init_app(app,docs=config.swagger_ui)
 
     # json webtoken manager
-    jwt.init_app(app)
+    #jwt.init_app(app)
     
     #setup admin user
     create_admin_user(dbManger)

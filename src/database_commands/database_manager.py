@@ -1,4 +1,5 @@
 from mysql.connector import pooling, errors
+from database_commands.wishlist import WishlistModel
 #from database_commands.product import ProductModel
 #from database_commands.orders import OrdersModel
 #from database_commands.admin import AdminModel
@@ -15,6 +16,8 @@ class DatabaseManager:
         
         self.pool_size = pool_size
         self.pool = None
+
+        self.wishlist = WishlistModel(self)
         
         '''self.product = ProductModel(self)
         self.orders = OrdersModel(self)

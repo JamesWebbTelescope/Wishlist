@@ -1,4 +1,5 @@
 from flask_restx import Api
+from apis.wishlist import create_api_wishlist
 #from apis.auth import create_api_auth, jwt
 #from apis.products import create_api_product
 #from apis.warehouse import create_api_warehouse
@@ -16,12 +17,13 @@ def create_api(
 
     use_swagger = "/docs" if swagger_ui else False
     api = Api(
-        title= "Lagersystem API",
+        title= "Wishlist",
         version= "1.0",
-        description= "Largersystem API",
+        description= "Wishlist",
         doc= use_swagger
     )
 
+    api.add_namespace(create_api_wishlist(db_manager), path="/api/wishlist")
     #api.add_namespace(create_api_auth(db_manager), path="/api/auth")
     #api.add_namespace(create_api_product(db_manager), path="/api/product")
     #api.add_namespace(create_api_warehouse(db_manager), path="/api/warehouse")
