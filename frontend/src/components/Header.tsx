@@ -56,7 +56,7 @@ export default function Navbar() {
       <a href="/" className={holoLinkClass}>
         Home
       </a>
-      <a href="/students" className={holoLinkClass}>
+      <a href="/wishes" className={holoLinkClass}>
         Wishlist
       </a>
       {

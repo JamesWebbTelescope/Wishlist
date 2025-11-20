@@ -2,7 +2,7 @@ import type {WishData} from '../types/Types'
 
 export const GetWishes = async (url: string) => {
     try{
-        const res = await fetch(`${url}/api/tutorials`)
+        const res = await fetch(`${url}/api/wishlist`)
         const data = await res.json()
         let wishes: Array<WishData> = []
         for(let i = 0; i < data.length; i++)

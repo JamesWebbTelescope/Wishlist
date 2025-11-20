@@ -13,8 +13,7 @@ export default function Home() {
           Welcome to Viktor's wishlist
         </h2>
         <p className="text-gray-400 max-w-xl mb-8">
-          Manage your inventory effortlessly with a modern, sleek interface. 
-          Track, update, and visualize your stock in real-time.
+          This is my wishlist
         </p>
  
       </section>

@@ -9,7 +9,7 @@ interface DisplayWishes {
     link: string;
 }
 
-export default function StudentsPage() {
+export default function WishPage() {
     const [wishes, setWishData] = useState<DisplayWishes[]>([]);
 
     const API_URL = import.meta.env.VITE_API_URL;
@@ -18,9 +18,9 @@ export default function StudentsPage() {
     useEffect(() => {
         const fetchData = async () => {
             const wishes = await GetWishes(API_URL);
-            console.log("Welcome to the student page")
+            console.log("Welcome to the wishlist page")
             for(const wish of wishes){
-                console.log(`Getting all students`)
+                console.log(`Getting all wishes`)
                 const w = wishes.find(item => item.id === wish.id);
                 if(w){
                     results.push({
@@ -38,10 +38,35 @@ export default function StudentsPage() {
             setWishData(results);
         };
         fetchData();
-    }, []);
+    }, [wishes]);
 
     return(
-    <Layout children={undefined}>
+    <Layout>
+        <div>
+                <h2>Wishlist</h2>
+
+
+                <table className="table">
+                <thead>
+                    <tr>
+                    <th>Price</th>
+                    <th>Name</th>
+                    <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {wishes.map((item, index) => (
+                    <tr key={index}>
+                        <td>{item.price}</td>
+                        <td>{item.name}</td>
+                        <td>{item.link}</td>
+                    </tr>
+                    ))}
+                </tbody>
+                </table>
+
+
+            </div>
         
     </Layout>
     )}
