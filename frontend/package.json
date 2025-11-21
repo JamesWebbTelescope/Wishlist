@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jameswebbtelescope.github.io/WIshlist/",
+  "homepage": "http://jameswebbtelescope.github.io/WIshlist/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
