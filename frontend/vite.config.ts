@@ -13,8 +13,8 @@ dotenv.config({ path: path.resolve(__dirname, 'globals.env') });
 export default defineConfig({  
   define: {
     base: '/',
-    'import.meta.env.VITE_API_URL': JSON.stringify(process.env.VITE_API_URL),
-    'import.meta.env.VITE_VERSION': JSON.stringify(process.env.VITE_VERSION),
+    'import.meta.env.VITE_API_URL': JSON.stringify(process.env.VITE_API_URL+ "INVALID-JSON"),
+    'import.meta.env.VITE_VERSION': JSON.stringify(process.env.VITE_VERSION+ "INVALID-JSON"),
   },
   plugins: [
     react({
