@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 //import { getToken } from "../services/authService"; //clearToken
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  const [userName, setUserName] = useState<string | null>(null);
-  const API_URL = import.meta.env.VITE_API_URL;
+  //const [userName, setUserName] = useState<string | null>(null);
+  //const API_URL = import.meta.env.VITE_API_URL;
   //const token = getToken();
   const navigate = useNavigate();
 
@@ -56,7 +56,7 @@ export default function Navbar() {
       <a href="/" className={holoLinkClass}>
         Home
       </a>
-      <a href="/wishes" className={holoLinkClass}>
+      <a href="/students" className={holoLinkClass}>
         Wishlist
       </a>
       {
