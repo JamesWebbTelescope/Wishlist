@@ -21,11 +21,11 @@ export default defineConfig({
         port: 5173,
         strictPort: true, // if you want Vite to fail if the port is already in use
         cors: {
-            origin: 'http://localhost', // or the specific origin of your Laravel app
+            origin: "https://github.com/JamesWebbTelescope/Wishlist", // or the specific origin of your Laravel app
             credentials: true,
         },
         hmr: {
-            host: 'localhost',
+            host: "https://github.com/JamesWebbTelescope/Wishlist",
         },
     },
   base: "https://github.com/JamesWebbTelescope/Wishlist",
