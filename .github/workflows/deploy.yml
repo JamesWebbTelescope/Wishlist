@@ -38,8 +38,11 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: |
+              pip install -r requirements.txt
               cd frontend
               npm ci
+      - name: Start server
+              python src/app.py
       - name: Build
         run: |
               cd frontend
