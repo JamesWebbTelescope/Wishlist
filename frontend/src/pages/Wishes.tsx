@@ -10,7 +10,7 @@ interface DisplayWishes {
 }
 
 export default function WishPage() {
-    const [wishes, setWishData] = useState<DisplayWishes[]>([]);
+    /*const [wishes, setWishData] = useState<DisplayWishes[]>([]);
 
     const API_URL = import.meta.env.VITE_API_URL;
     const results: DisplayWishes[] = [];
@@ -35,10 +35,10 @@ export default function WishPage() {
                         console.log(w.price)
                         }
                 }           
-            setWishData(results);*/
+            setWishData(results);
         };
         fetchData();
-    }, []);
+    }, []);*/
 
     return(
     <Layout>
