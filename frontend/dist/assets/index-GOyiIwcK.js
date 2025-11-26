@@ -58,4 +58,4 @@ Error generating stack: `+a.message+`
                        bg-linear-to-r from-red-400 via-green-400 to-pink-400\r
                        bg-size-[200%_200%] animate-gradient-colors text-glow\r
                        leading-tight`,children:"Welcome to Viktor's wishlist"}),G.jsx("p",{className:"text-gray-400 max-w-xl mb-8",children:"This is my wishlist"})]}),G.jsx(Id,{})]}),l[0]=t):t=l[0],t}$d.createRoot(document.getElementById("root")).render(G.jsx(Sn.StrictMode,{children:G.jsx(Pd,{})}));
-//# sourceMappingURL=index-DVqfBYRG.js.map
+//# sourceMappingURL=index-GOyiIwcK.js.map
