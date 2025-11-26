@@ -55,13 +55,11 @@ export default function WishPage() {
                     </tr>
                 </thead>
                 <tbody>
-                    {wishes.map((item, index) => (
-                    <tr key={index}>
-                        <td>{item.price}</td>
-                        <td>{item.name}</td>
-                        <td>{item.link}</td>
+                    <tr key={1}>
+                        <td>{639}</td>
+                        <td>{'Märklin 40402 Start up - Dobbeltdækker Styrevogn 2. klasse'}</td>
+                        <td>{'https://www.smtmodeltog.dk/shop/marklin-40402-start-21780p.html'}</td>
                     </tr>
-                    ))}
                 </tbody>
                 </table>
 
