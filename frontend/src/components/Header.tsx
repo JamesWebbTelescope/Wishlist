@@ -63,7 +63,7 @@ export default function Navbar() {
         <button
           onClick={() => {
             // clearToken();
-            navigate("Wishlist/wishes");
+            navigate("/wishes");
           }}
           className={holoLinkClass}
         >
