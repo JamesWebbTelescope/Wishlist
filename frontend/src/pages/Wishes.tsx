@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
-import { useState, useEffect } from "react";
-import { GetWishes} from "../services/apiServices";
+//import { useState, useEffect } from "react";
+//import { GetWishes} from "../services/apiServices";
 
 interface DisplayWishes {
     id: number;
