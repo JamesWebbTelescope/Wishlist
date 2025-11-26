@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import "./index.css"
 import Home from "./pages/Home";
 import WishPage from "./pages/Wishes"
@@ -8,12 +8,12 @@ import WishPage from "./pages/Wishes"
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="Wishlist/" element={<Home />} />
         <Route path="Wishlist/wishes" element= {<WishPage/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
