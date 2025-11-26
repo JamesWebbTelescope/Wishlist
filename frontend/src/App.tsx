@@ -10,10 +10,10 @@ import WishPage from "./pages/Wishes"
 export default function App() {
   return (
     <HashRouter >
-      <Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/wishes" element= {<WishPage/>}/>
-      </Route>
+      <Routes>
+        <Route path="/Wishlist" element={<Home />} />
+        <Route path="Wishlist/wishes" element= {<WishPage/>}/>
+      </Routes>
     </HashRouter>
   );
 }
