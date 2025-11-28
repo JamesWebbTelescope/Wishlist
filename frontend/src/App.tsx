@@ -1,6 +1,7 @@
-//import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
+import { BrowserRouter} from "react-router-dom"
 import "./index.css"
-//import Home from "./pages/Home";
+import Home from "./pages/Home";
 import WishPage from "./pages/Wishes"
 
 //import Products from "./pages/Products";
@@ -24,13 +25,15 @@ export default function App() {
             </section>
 
       <WishPage/>
+      <div>
+      <BrowserRouter basename={import.meta.env.PUBLIC_URL}>
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/wishes" element= {<WishPage/>}/>
+        </Routes>
+    </BrowserRouter>
     </div>
-    //<HashRouter >
-      //<Routes>
-        //<Route path="/" element={<Home />} />
-        //<Route path="/Wishlist/wishes" element= {<WishPage/>}/>
-      //</Routes>
-    //</HashRouter>
+    </div>
   );
 }
 

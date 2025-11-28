@@ -1,6 +1,6 @@
 
 import type { ReactNode } from "react";
-//import Header from "./Header";
+import Header from "./Header";
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,6 +9,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div className="dark min-h-screen flex flex-col bg-green-900 text-gray-100">
+      <Header />
       <main className="grow max-w-6xl mx-auto px-4 py-8">
         {children}
       </main>
