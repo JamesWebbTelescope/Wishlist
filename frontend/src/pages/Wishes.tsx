@@ -58,12 +58,12 @@ export default function WishPage() {
                         <td>{'Märklin 40402 Start up - Dobbeltdækker Styrevogn 2. klasse'}</td>
                         <td>{'https://www.smtmodeltog.dk/shop/marklin-40402-start-21780p.html'}</td>
                     </tr>
-                    <tr key={2}>
+                    <tr key={1}>
                         <td>{"Ukendt"}</td>
                         <td>{'Bukser'}</td>
                         <td>{}</td>
                     </tr>
-                    <tr key={3}>
+                    <tr key={1}>
                         <td>{"Ukendt"}</td>
                         <td>{'Ny smartphone'}</td>
                         <td>{}</td>
