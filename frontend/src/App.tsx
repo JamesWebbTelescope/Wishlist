@@ -29,7 +29,7 @@ export default function App() {
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Wishlist/frontend/src/pages/Wishes" element= {<WishPage/>}/>
+          <Route path="/frontend/src/pages/Wishes" element= {<WishPage/>}/>
         </Routes>
     </BrowserRouter>
     </div>
