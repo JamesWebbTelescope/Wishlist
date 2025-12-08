@@ -1,5 +1,5 @@
 import { Routes, Route} from "react-router-dom";
-import { BrowserRouter} from "react-router-dom"
+import { HashRouter} from "react-router-dom"
 import "./index.css"
 import Home from "./pages/Home";
 import WishPage from "./pages/Wishes"
@@ -26,12 +26,12 @@ export default function App() {
 
       <WishPage/>
       <div>
-      <BrowserRouter basename="/">
+      <HashRouter basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/frontend/src/pages/Wishes" element= {<WishPage/>}/>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </div>
     </div>
   );
