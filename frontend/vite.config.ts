@@ -16,7 +16,7 @@ export default defineConfig({
     'import.meta.env.VITE_API_URL': JSON.stringify(process.env.VITE_API_URL),
     'import.meta.env.VITE_VERSION': JSON.stringify(process.env.VITE_VERSION),
   },*/
-  base: "/frontend/src",
+  base: "/frontend",
   plugins: [
     react({
       babel: {
