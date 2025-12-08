@@ -26,7 +26,7 @@ export default function App() {
 
       <WishPage/>
       <div>
-      <HashRouter basename="/">
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/frontend/src/pages/Wishes" element= {<WishPage/>}/>
