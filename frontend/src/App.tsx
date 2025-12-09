@@ -26,12 +26,12 @@ export default function App() {
 
       <WishPage/>
       <div>
-      <HashRouter basename="/Wishlist">
+      <BrowserRouter basename="/Wishlist/frontend/src/pages/">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/frontend/src/pages/Wishes" element= {<WishPage/>}/>
         </Routes>
-    </HashRouter>
+    </BrowserRouter>
     </div>
     </div>
   );
