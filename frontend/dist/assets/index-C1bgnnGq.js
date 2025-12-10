@@ -138,4 +138,4 @@ Please change the parent <Route path="${m}"> to <Route path="${m==="/"?"*":`${m}
                             bg-linear-to-r from-red-400 via-green-400 to-pink-400\r
                             bg-size-[200%_200%] animate-gradient-colors text-glow\r
                             leading-tight`,children:"Welcome to Viktor's wishlist"}),R.jsx("p",{className:"text-gray-400 max-w-xl mb-8",children:"This is my wishlist"})]}),e=R.jsx(Ur,{}),t[0]=l,t[1]=e):(l=t[0],e=t[1]);let a;t[2]===Symbol.for("react.memo_cache_sentinel")?(a=R.jsx(Xf,{path:"/#/",element:R.jsx(_1,{})}),t[2]=a):a=t[2];let u;return t[3]===Symbol.for("react.memo_cache_sentinel")?(u=R.jsxs("div",{children:[l,e,R.jsx("div",{children:R.jsx(s1,{basename:"/Wishlist/frontend/src/pages/",children:R.jsxs(Qv,{children:[a,R.jsx(Xf,{path:"/frontend/src/pages/Wishes/#/",element:R.jsx(Ur,{})})]})})})]}),t[3]=u):u=t[3],u}ky.createRoot(document.getElementById("root")).render(R.jsx(p.StrictMode,{children:R.jsx(O1,{})}));
-//# sourceMappingURL=index-DxXFRktW.js.map
+//# sourceMappingURL=index-C1bgnnGq.js.map
