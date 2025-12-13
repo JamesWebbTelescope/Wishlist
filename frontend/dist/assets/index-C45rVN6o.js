@@ -81,4 +81,4 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
                             bg-linear-to-r from-red-400 via-green-400 to-pink-400\r
                             bg-size-[200%_200%] animate-gradient-colors text-glow\r
                             leading-tight`,children:"Welcome to Viktor's wishlist"}),$.jsx("p",{className:"text-gray-400 max-w-xl mb-8",children:"This is my wishlist"})]}),s=$.jsx(oh,{}),f[0]=o,f[1]=s):(o=f[0],s=f[1]);let r;f[2]===Symbol.for("react.memo_cache_sentinel")?(r=$.jsx(Yc,{path:"Wishlist/#/",element:$.jsx(jv,{})}),f[2]=r):r=f[2];let h;return f[3]===Symbol.for("react.memo_cache_sentinel")?(h=$.jsxs("div",{children:[o,s,$.jsx("div",{children:$.jsx(Tv,{basename:"/",children:$.jsxs(tv,{children:[r,$.jsx(Yc,{path:"Wishlist/Wishes/#/",element:$.jsx(oh,{})})]})})})]}),f[3]=h):h=f[3],h}fy.createRoot(document.getElementById("root")).render($.jsx(x.StrictMode,{children:$.jsx(Yv,{})}));
-//# sourceMappingURL=index-jaVu8FSg.js.map
+//# sourceMappingURL=index-C45rVN6o.js.map
