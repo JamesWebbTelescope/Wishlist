@@ -27,8 +27,8 @@ export default function App() {
       <div>
       <HashRouter basename="/">
         <Routes>
-          <Route path="/#/" element={<Home />} />
-          <Route path="/Wishes/#/" element= {<WishPage/>}/>
+          <Route path="Wishlist/#/" element={<Home />} />
+          <Route path="Wishlist/Wishes/#/" element= {<WishPage/>}/>
         </Routes>
     </HashRouter>
     </div>
