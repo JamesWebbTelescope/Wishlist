@@ -56,14 +56,14 @@ export default function Navbar() {
       <a href="/" className={holoLinkClass}>
         Home
       </a>
-      <a href="Wishlist/#/Wishes" className={holoLinkClass}>
+      <a href="/#/Wishes" className={holoLinkClass}>
         Wishlist
       </a>
       {
         <button
           onClick={() => {
             // clearToken();
-            //navigate("/wishes");
+            navigate("/#/Wishes");
           }}
           className={holoLinkClass}
         >
